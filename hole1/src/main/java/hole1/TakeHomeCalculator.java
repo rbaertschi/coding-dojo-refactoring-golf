@@ -21,9 +21,6 @@ class TakeHomeCalculator {
             if (next.second != total.second) {
                 throw new Incalculable();
             }
-        }
-
-        for (Pair<Integer, String> next : pairs) {
             total = new Pair<>(total.first + next.first, next.second);
         }
 

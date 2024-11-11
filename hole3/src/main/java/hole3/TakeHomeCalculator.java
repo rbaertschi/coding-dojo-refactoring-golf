@@ -21,9 +21,6 @@ class TakeHomeCalculator {
             if (!next.currency.equals(total.currency)) {
                 throw new Incalculable();
             }
-        }
-
-        for (Money next : monies) {
             total = new Money(total.value + next.value, next.currency);
         }
 

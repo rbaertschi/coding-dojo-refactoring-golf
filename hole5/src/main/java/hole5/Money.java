@@ -17,7 +17,7 @@ class Money {
         if (!other.currency.equals(currency)) {
             throw new Incalculable();
         }
-        return money(value + other.value, other.currency);
+        return money(value + other.value, currency);
     }
 
     Money minus(Money other) {
